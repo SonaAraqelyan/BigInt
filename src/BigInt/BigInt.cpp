@@ -20,7 +20,7 @@ BigInt::BigInt(const string& s)
 	for(auto it = s.begin();it != s.end(); it++){
 		if(((*it)-48) < 0 || ((*it)-48) > 9){
 			std::cout << "Your input is not correc, write only numbers!!!\n";
-			throw std::exception("Trying to input none number expression!!!\n");
+			throw std::logic_error("Trying to input none number expression!!!\n");
 		}
 	}
 	digits = s;
