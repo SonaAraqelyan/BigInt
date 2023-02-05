@@ -395,7 +395,7 @@ BigInt& BigInt::operator%=(const BigInt& rhs)
 {
 	if(rhs.digits=="0"){
 		std::cout<<"The number can't be divided by 0 !!!\n"; 
-		throw std::exception("Trying to divide by 0 !!!\n");
+		throw std::logic_error("Trying to divide by 0 !!!\n");
 	}
 
 	while(*this>rhs){
