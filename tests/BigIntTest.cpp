@@ -143,7 +143,7 @@ TEST(degree, deg_2)
     BigInt number_1("0");
     BigInt number_2("2");
     const auto expected = BigInt("0");
-    const auto actual = number_1 % number_2;
+    const auto actual = number_1 ^ number_2;
     ASSERT_EQ(expected, actual);
 }
 
